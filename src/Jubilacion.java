@@ -10,6 +10,7 @@ public class Jubilacion {
 
     public static void main(){
         final int EDAD_JUBILACION = 65;
+        final int MAYORIA_EDAD = 21;
         String nombre;
         int edad = 0;
         Scanner scanner = new Scanner(System.in);
@@ -19,8 +20,11 @@ public class Jubilacion {
         edad = scanner.nextInt();
         if (edad >= EDAD_JUBILACION) {
             System.out.println(nombre + " tiene " + edad + " años y esta listo para jubilarse");
+        } else if (edad >= 18) {
+            System.out.println(nombre + " es mayor de edad");
         }
             else {
+            System.out.println( " es mayor de edad ");
                 System.out.println(nombre + " tiene " + edad + " años y aun no se puede jubilar");
             System.out.println("Le faltan " +(EDAD_JUBILACION - edad) + " años para jubilarse ");
         }//Finsi
